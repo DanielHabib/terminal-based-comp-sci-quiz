@@ -1,25 +1,21 @@
+def solutionFileName(id):
+    return 'solution_template_' + str(prompt.id) + '.py'
+
 def strInput(prompt):
     return str(input(prompt + "\n"))
 
 def handlePrompt(prompt, promptList):
     if prompt.type == TYPE_QUESTION:
         prompt.userAnswer = strInput(prompt.prompt)
-        promptList.append(prompt)
     elif prompt.type == TYPE_IMPLEMENTATION:
-        solutionTemplate = 'solution_template_'+str(prompt.id)+'.py'
-
+        solutionTemplate = solutionFileName(prompt.id)
         val = subprocess.check_output(["cat", "implementation_template.py"]).decode('ascii')
         val = val.replace("func_name", prompt.funcName)
 
         with open(solutionTemplate, 'w') as out:
             out.writelines(val)
-
-        # command = 'touch ' + solutionTemplate + '; val="${$(cat implementation_template.py)/func_name/' + prompt.funcName + '}";echo $val >> ' + solutionTemplate
-        # os.system('touch ' + solutionTemplate+ ';')
-        #print(command)
-        #os.system(command)
         os.system("vim " + solutionTemplate)
-
+    promptList.append(prompt)
 
 
 if __name__ == '__main__':
@@ -28,7 +24,6 @@ if __name__ == '__main__':
     from pprint import pprint
     import subprocess
     import os
-
 
     promptList = []
 
@@ -41,7 +36,7 @@ if __name__ == '__main__':
     pprint("********************************************")
 
     for prompt in promptList:
-        pprint("My Answer: {0}    Exepected Answer:{1}".format(prompt.userAnswer, prompt.answer))
+        pprint("My Answer: {0}      Exepected Answer:{1}".format(prompt.userAnswer, prompt.answer))
         grade = strInput("Did you get it right?")
         prompt.grade = grade
 
@@ -50,8 +45,17 @@ if __name__ == '__main__':
     total = 0
     correct = 0
     for prompt in promptList:
-        if prompt.userAnswer.lower() in ("y", "yes"):
-            correct += 1
+        if prompt.type == TYPE_QUESTION:
+            if prompt.userAnswer == "y":
+                correct += 1
+        elif prompt.type == TYPE_IMPLEMENTATION:
+            """Run the testcase and confirm result equals expected"""
+            filename = solutionFileName(prompt.id)
+            prompt_module = importlib.import_module(filename)
+
+            result = prompt_module.evalute(prompt.tests["input"])
+            if result == prompt.tests["output"]:
+                correct += 1
         total += 1
     pprint("")
     pprint("GRADE : {0}".format((correct/total) * 100))
