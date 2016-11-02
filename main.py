@@ -9,9 +9,12 @@ def handlePrompt(prompt, promptList):
         prompt.userAnswer = strInput(prompt.prompt)
     elif prompt.type == TYPE_IMPLEMENTATION:
         solutionTemplate = solutionFileName(prompt.id)
+        
         val = subprocess.check_output(["cat", "implementation_template.py"]).decode('ascii')
         val = val.replace("func_name", prompt.funcName)
         val = val.replace("func_args", ", ".join(prompt.arguments))
+        val = val.replace("func_description", prompt.description)
+
         with open(solutionTemplate, 'w') as out:
             out.writelines(val)
         os.system("vim " + solutionTemplate)
@@ -35,7 +38,7 @@ if __name__ == '__main__':
         handlePrompt(prompt,promptList)
 
     pprint("********************************************")
-    pprint("Congrats you finished all of the questions! Now it is time to grade your answers!")
+    pprint("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)")
     pprint("********************************************")
 
     for prompt in promptList:
@@ -49,13 +52,14 @@ if __name__ == '__main__':
 
 
     """Build Report"""
-    total = 0
-    correct = 0
+    total, correct = 0, 0
+    
     importlib.invalidate_caches()
+
     for prompt in promptList:
         if prompt.type == TYPE_QUESTION:
-            if prompt.grade == "y":
-                correct += 1
+            if prompt.grade == "y": correct += 1
+            
         elif prompt.type == TYPE_IMPLEMENTATION:
             """Run the testcase and confirm result equals expected"""
             filename = solutionFileName(prompt.id)
@@ -64,6 +68,8 @@ if __name__ == '__main__':
             result = prompt_module.evaluate(*prompt.test["input"])
             if result == prompt.test["output"]:
                 correct += 1
+            else:
+                print("Implementation of `{0}` failed".format(prompt.title))
         total += 1
     pprint("")
     pprint("GRADE : {0}".format((correct/total) * 100))

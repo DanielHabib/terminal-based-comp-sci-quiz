@@ -1,3 +1,7 @@
+'''
+func_description
+'''
+
 class Solution:
     def func_name(self,func_args):
         result = ""
