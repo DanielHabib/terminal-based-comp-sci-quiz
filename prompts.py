@@ -14,7 +14,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Quicksort Lowerbound Intuition",
         "prompt": "What is the largest lower bound asymptotic time complexity function of Quicksort?",
-        "answer": "O(NlogN). Explanation: Sorting of an array is finding a permutation of that array. We know there are n! permutations of any given sequence of values, so even if we had perfect splits, we still would have a tree of height log(n!) = O(Nlogn)"
+        "answer": "O(NlogN). Explanation: Sorting of an array is finding a specific permutation of that array. We know there are n! permutations of any given sequence of values,and every permutation requires our algorithm to handle it differnetly,  so even if we had perfect splits, we still would have a tree of height log(n!) = O(Nlogn)"
     },
     {
         "id":3,
@@ -36,5 +36,27 @@ prompts = [
             "input": [[1,5,2,6,3]],
             "output": [1,2,3,5,6],
         }
-    }
+    },
+    {
+        "id" : 5,
+        "type": TYPE_IMPLEMENTATION,
+        "prompt": "",
+        "title": "Mergesort Implementation",
+        "answer": "",
+        "funcName": "mergesort",
+        "description": "Perform mergesort capable of achieving O(nlogn) time complexity.",
+        "arguments": ["arr"],
+        "test": {
+            "input": [[1,5,2,6,3]],
+            "output": [1,2,3,5,6],
+        },   
+    },
+    {
+        "id": 6,
+        "type": TYPE_QUESTION,
+        "title": "Different Byte Prefixes",
+        "prompt": "What are the prefixes in order for 2^10, 2^20, 2^30, 2^40 , 2^50 Bytes",
+        "answer": "kilo, mega, giga, tera, peta",
+    },
 ]
+

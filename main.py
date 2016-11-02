@@ -44,6 +44,8 @@ if __name__ == '__main__':
     for prompt in promptList:
         pprint("My Answer: {0}      Expected Answer:{1}".format(prompt.userAnswer, prompt.answer))
         graded = False
+        if prompt.type == TYPE_IMPLEMENTATION:
+            continue
         while not graded:
             grade = strInput("Did you get it right?(y/n)")
             if grade == 'y' or grade == 'n':
