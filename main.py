@@ -29,6 +29,7 @@ if __name__ == '__main__':
     import subprocess
     import os
     import importlib
+    import time
 
     promptList = []
     """Ask some Questions"""
@@ -73,6 +74,14 @@ if __name__ == '__main__':
             else:
                 print("Implementation of `{0}` failed".format(prompt.title))
         total += 1
+    grade = (correct/total) * 100
     pprint("")
-    pprint("GRADE : {0}".format((correct/total) * 100))
-    
+    pprint("GRADE : {0}".format(grade))
+    with open('results.txt', 'a') as resultsFile:
+        resultsFile.write("Grade:{0} \t Timestamp:{1}\n".format(grade,time.time()))
+
+
+
+
+
+
