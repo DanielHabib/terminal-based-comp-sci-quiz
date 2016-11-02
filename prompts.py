@@ -26,9 +26,9 @@ prompts = [
         "prompt": "Write out Quicksort",
         "answer": "",
         "funcName": "quicksort",
-        "input": ["arr"],
+        "arguments": ["arr"],
         "test": {
-            "input": [1,5,2,6,3],
+            "input": [[1,5,2,6,3]],
             "output": [1,2,3,5,6],
         }
     }

@@ -1,9 +1,10 @@
 class Solution:
-    def func_name(self):
+    def func_name(self,func_args):
         result = ""
 
 
-def evaluate(expectedResult, *args):
+def evaluate(*args):
+    """Don't Touch This Function """
     solution = Solution()
-    result = solution.func_name(*args)
-    return result == expectedResult
+    return solution.func_name(*args)
+    

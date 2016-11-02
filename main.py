@@ -11,7 +11,7 @@ def handlePrompt(prompt, promptList):
         solutionTemplate = solutionFileName(prompt.id)
         val = subprocess.check_output(["cat", "implementation_template.py"]).decode('ascii')
         val = val.replace("func_name", prompt.funcName)
-
+        val = val.replace("func_args", ", ".join(prompt.arguments))
         with open(solutionTemplate, 'w') as out:
             out.writelines(val)
         os.system("vim " + solutionTemplate)
@@ -24,9 +24,10 @@ if __name__ == '__main__':
     from pprint import pprint
     import subprocess
     import os
+    import importlib
 
     promptList = []
-
+    """Ask some Questions"""
     for rawPrompt in prompts:
         prompt = Entry(**rawPrompt)
         handlePrompt(prompt,promptList)
@@ -44,6 +45,7 @@ if __name__ == '__main__':
     """Build Report"""
     total = 0
     correct = 0
+    importlib.invalidate_caches()
     for prompt in promptList:
         if prompt.type == TYPE_QUESTION:
             if prompt.userAnswer == "y":
@@ -51,10 +53,10 @@ if __name__ == '__main__':
         elif prompt.type == TYPE_IMPLEMENTATION:
             """Run the testcase and confirm result equals expected"""
             filename = solutionFileName(prompt.id)
-            prompt_module = importlib.import_module(filename)
-
-            result = prompt_module.evalute(prompt.tests["input"])
-            if result == prompt.tests["output"]:
+            prompt_module = importlib.import_module(filename[:-3])
+            
+            result = prompt_module.evaluate(*prompt.test["input"])
+            if result == prompt.test["output"]:
                 correct += 1
         total += 1
     pprint("")
