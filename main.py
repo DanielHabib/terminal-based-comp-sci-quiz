@@ -22,12 +22,14 @@ if __name__ == '__main__':
     from prompts import prompts, TYPE_QUESTION, TYPE_IMPLEMENTATION
     from entry import Entry
     from pprint import pprint
+    import random
     import subprocess
     import os
     import importlib
 
     promptList = []
     """Ask some Questions"""
+    random.shuffle(prompts)
     for rawPrompt in prompts:
         prompt = Entry(**rawPrompt)
         handlePrompt(prompt,promptList)
