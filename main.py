@@ -39,9 +39,13 @@ if __name__ == '__main__':
     pprint("********************************************")
 
     for prompt in promptList:
-        pprint("My Answer: {0}      Exepected Answer:{1}".format(prompt.userAnswer, prompt.answer))
-        grade = strInput("Did you get it right?")
-        prompt.grade = grade
+        pprint("My Answer: {0}      Expected Answer:{1}".format(prompt.userAnswer, prompt.answer))
+        graded = False
+        while not graded:
+            grade = strInput("Did you get it right?(y/n)")
+            if grade == 'y' or grade == 'n':
+                prompt.grade = grade
+                graded=True
 
 
     """Build Report"""
