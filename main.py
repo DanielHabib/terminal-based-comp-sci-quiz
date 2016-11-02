@@ -50,7 +50,7 @@ if __name__ == '__main__':
     importlib.invalidate_caches()
     for prompt in promptList:
         if prompt.type == TYPE_QUESTION:
-            if prompt.userAnswer == "y":
+            if prompt.grade == "y":
                 correct += 1
         elif prompt.type == TYPE_IMPLEMENTATION:
             """Run the testcase and confirm result equals expected"""
