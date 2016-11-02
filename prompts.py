@@ -58,5 +58,19 @@ prompts = [
         "prompt": "What are the prefixes in order for 2^10, 2^20, 2^30, 2^40 , 2^50 Bytes",
         "answer": "kilo, mega, giga, tera, peta",
     },
+    {
+        "id": 7,
+        "type": TYPE_QUESTION,
+        "title": "Mathematical Induction Intuition",
+        "prompt": "What is Mathematical Induction? How does it apply to algorithm design?",
+        "answer": "Mathematical Induction is a mathematical method that can be used ot prove the correctness of an equation or algorithm. If we want to prove that our algorithm/equation is correct, we start by testing the base case, if that holds then we evaluate the answer at n & n+1",
+    }{
+        "id": 8,
+        "type": TYPE_QUESTION,
+        "title": "RAM Model of Computation Intuition",
+        "prompt": "What is the RAM Model of Computation?",
+        "answer": "Its a machine/language independant method for analyzing algorithms. When analyzing algorithms using this method we are only concerned with number of steps an algorithm takes to complete",
+    }
 ]
+
 
