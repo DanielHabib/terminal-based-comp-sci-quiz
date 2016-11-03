@@ -1,11 +1,15 @@
 def solutionFileName(id):
     return 'solution_template_' + str(prompt.id) + '.py'
 
-def strInput(prompt):
-    return str(input(Ink.header(prompt + "\n")))
+def strInput(prompt):    
+    val = str(input(Ink.header(prompt + "\n")))
+    os.system('clear') 
+    return val
 
 def intInput(prompt):
-    return int(input(Ink.header(prompt + "\n")))
+    val = int(input(Ink.header(prompt + "\n")))
+    os.system('clear') 
+    return val
 
 def handlePrompt(prompt, promptList):
     if prompt.type == TYPE_QUESTION:
@@ -38,11 +42,12 @@ if __name__ == '__main__':
     """Ask some Questions"""
     random.shuffle(prompts)
     numberOfQuestions = intInput(Ink.header("How many questions would you like to solve today? (max: {0})".format(len(prompts))))
+    
     prompts = prompts[:numberOfQuestions]
     for rawPrompt in prompts:
         prompt = Entry(**rawPrompt)
         handlePrompt(prompt,promptList)
-   
+        
     print(Ink.good("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)\n\n"))
 
     for prompt in promptList:
