@@ -72,6 +72,7 @@ if __name__ == '__main__':
             if prompt.grade == "y": correct += 1
             
         elif prompt.type == TYPE_IMPLEMENTATION:
+            print(Ink.ok("Evaluating Scripts and building Report"))
             """Run the testcase and confirm result equals expected"""
             filename = solutionFileName(prompt.id)
             prompt_module = importlib.import_module(filename[:-3])
