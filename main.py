@@ -4,6 +4,9 @@ def solutionFileName(id):
 def strInput(prompt):
     return str(input(Ink.header(prompt + "\n")))
 
+def intInput(prompt):
+    return int(input(Ink.header(prompt + "\n")))
+
 def handlePrompt(prompt, promptList):
     if prompt.type == TYPE_QUESTION:
         prompt.userAnswer = strInput(prompt.prompt)
@@ -34,18 +37,19 @@ if __name__ == '__main__':
     promptList = []
     """Ask some Questions"""
     random.shuffle(prompts)
+    numberOfQuestions = intInput(Ink.header("How many questions would you like to solve today? (max: {0})".format(len(prompts))))
+    prompts = prompts[:numberOfQuestions]
     for rawPrompt in prompts:
         prompt = Entry(**rawPrompt)
         handlePrompt(prompt,promptList)
-
-    
+   
     print(Ink.good("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)\n\n"))
 
     for prompt in promptList:
+        if prompt.type == TYPE_IMPLEMENTATION: continue
+
         print(Ink.bold("My Answer: {0}\n".format(prompt.userAnswer)), Ink.good("Expected Answer:{0}".format(prompt.answer)))
         graded = False
-        if prompt.type == TYPE_IMPLEMENTATION:
-            continue
         while not graded:
             grade = strInput("Did you get it right?(y/n)")
             if grade == 'y' or grade == 'n':
@@ -77,10 +81,7 @@ if __name__ == '__main__':
     
     print(Ink.underline("GRADE : {0}".format(grade)))
     with open('results.txt', 'a') as resultsFile:
-        resultsFile.write("Grade:{0} \t Timestamp:{1}\n".format(grade,time.time()))
-
-
-
+        resultsFile.write("Grade:{0}\tNumberOfQuestions:{1}\tTimestamp:{2}\n".format(grade,numberOfQuestions,time.time()))
 
 
 
