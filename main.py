@@ -24,13 +24,13 @@ def handlePrompt(prompt, promptList):
 if __name__ == '__main__':
     from prompts import prompts, TYPE_QUESTION, TYPE_IMPLEMENTATION
     from entry import Entry
-    from pprint import pprint
+    from ink import Ink
     import random
     import subprocess
     import os
     import importlib
     import time
-
+   
     promptList = []
     """Ask some Questions"""
     random.shuffle(prompts)
