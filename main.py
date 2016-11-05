@@ -1,8 +1,8 @@
 class ImplementationFailedException:
     """Implementation Script is busted """
 
-def solutionFileName(id):
-    return 'solution_template_' + str(prompt.id) + '.py'
+def solutionFileName(idVal):
+    return 'solution_template_' + str(idVal) + '.py'
 
 def promptInput(prompt):
     return input(Ink.header(prompt + "\n"))
@@ -102,11 +102,13 @@ if __name__ == '__main__':
             print(Ink.fail("Implementation of `{0}` failed\n".format(prompt.title)))
             return 0
 
-    numberOfCorrectQuestions = sum(map(lambda prompt: prompt.grade, questionPrompts))
     
     print(Ink.ok("Evaluating Scripts and building Report"))
     numberOfCorrectImplementations = sum(map(testImplementation, implementationPrompts))
+    numberOfCorrectQuestions = sum(map(lambda prompt: prompt.grade, questionPrompts))
+
     print(numberOfCorrectQuestions, numberOfCorrectImplementations, numberOfPrompts)
+
     grade = ((numberOfCorrectImplementations + numberOfCorrectQuestions) / numberOfPrompts)*100
     
     print(Ink.underline("GRADE : {0}".format(grade)))
