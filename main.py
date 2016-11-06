@@ -1,3 +1,14 @@
+from prompts import prompts, TYPE_QUESTION, TYPE_IMPLEMENTATION
+from entry import Entry
+from functools import reduce
+from ink import Ink
+import random
+import subprocess
+import os
+import importlib
+import time
+
+
 class ImplementationFailedException:
     """Implementation Script is busted """
 
@@ -47,16 +58,6 @@ def handlePrompt(prompt, promptList):
 
 
 if __name__ == '__main__':
-    from prompts import prompts, TYPE_QUESTION, TYPE_IMPLEMENTATION
-    from entry import Entry
-    from functools import reduce
-
-    from ink import Ink
-    import random
-    import subprocess
-    import os
-    import importlib
-    import time
    
     promptList = []
     """Ask some Questions"""
@@ -69,10 +70,8 @@ if __name__ == '__main__':
     os.system('clear')   
     print(Ink.good("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)\n\n"))
 
-    
-    questionPrompts = list(filter(lambda prompt: prompt.type == TYPE_QUESTION, promptList))
-    implementationPrompts = list(filter(lambda prompt: prompt.type == TYPE_IMPLEMENTATION, promptList))
-
+    questionPrompts = [prompt for prompt in promptList if prompt.type == TYPE_QUESTION] 
+    implementationPrompts = [prompt for prompt in promptList if prompt.type == TYPE_IMPLEMENTATION]
 
     for prompt in questionPrompts:
         print(Ink.bold("My Answer: {0}\n".format(prompt.userAnswer)), Ink.good("Expected Answer:{0}".format(prompt.answer)))
@@ -106,8 +105,6 @@ if __name__ == '__main__':
     print(Ink.ok("Evaluating Scripts and building Report"))
     numberOfCorrectImplementations = sum(map(testImplementation, implementationPrompts))
     numberOfCorrectQuestions = sum(map(lambda prompt: prompt.grade, questionPrompts))
-
-    print(numberOfCorrectQuestions, numberOfCorrectImplementations, numberOfPrompts)
 
     grade = ((numberOfCorrectImplementations + numberOfCorrectQuestions) / numberOfPrompts)*100
     
