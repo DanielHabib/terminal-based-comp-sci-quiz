@@ -2,3 +2,4 @@ __pycache__
 *.pyc
 solution_template*
 results.txt
+.DS_Store

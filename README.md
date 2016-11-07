@@ -1,6 +1,7 @@
 # Educate Yo Self
 Terminal Based Computer Science Self-assesment
 
+![Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
 
 ## Getting Started
 

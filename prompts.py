@@ -71,6 +71,27 @@ prompts = [
         "title": "RAM Model of Computation Intuition",
         "prompt": "What is the RAM Model of Computation?",
         "answer": "Its a machine/language independant method for analyzing algorithms. When analyzing algorithms using this method we are only concerned with number of steps an algorithm takes to complete",
+    },
+    {
+        "id": 9,
+        "type": TYPE_QUESTION,
+        "title": "Spanning Tree Intuition?",
+        "prompt": "What is a minimum spanning tree",
+        "answer": "A tree that touches all given nodes in a set while achieving the minimum total edge length possible"
+    },
+    {
+        "id": 10,
+        "type": TYPE_QUESTION,
+        "title": "Signedness Intuition",
+        "prompt": "What is the difference between a signed and unsigned integer?",
+        "answer": "the difference lies in whether the integer contains a  sign bit. A signed integer uses the leftmost bit to hold onto the sign of the bit vector, allowing for negative numbers. However an unsigned integer with the same length bit-vector can represent values that are 2n + 1 greater  "
+    },
+    {
+        "id": 11,
+        "type": TYPE_QUESTION,
+        "title": "Significant Bits",
+        "prompt": "Where is the most significant bit in a bit vector located?",
+        "answer": "the leftmost bit is the most significant bit"
     }
 ]
 
