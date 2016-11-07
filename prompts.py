@@ -77,7 +77,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Spanning Tree Intuition?",
         "prompt": "What is a minimum spanning tree",
-        "answer": "A tree that touches all given nodes in a set while achieving the minimum total edge length possible"
+        "answer": "A tree that touches all given nodes in a set while achieving the minimum total edge length possible. We can use Primm's algorithm to find it"
     },
     {
         "id": 10,
