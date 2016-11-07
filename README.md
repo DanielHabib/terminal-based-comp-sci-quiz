@@ -1,4 +1,6 @@
 # Educate Yo Self
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 Terminal Based Computer Science Self-assesment
 
 ![Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
