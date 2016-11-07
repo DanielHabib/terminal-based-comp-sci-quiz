@@ -15,5 +15,7 @@ To start a quiz:
 make quiz
 ```
 
+Results are written into `results.txt` with your grade and a timestamp!
+
 ## Requirements
 python 3.X
