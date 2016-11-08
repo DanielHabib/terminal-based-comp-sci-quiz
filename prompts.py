@@ -92,6 +92,13 @@ prompts = [
         "title": "Significant Bits",
         "prompt": "Where is the most significant bit in a bit vector located?",
         "answer": "the leftmost bit is the most significant bit"
+    },
+    {
+        "id":12,
+        "type": TYPE_QUESTION,
+        "title": "LRU Cache Intuition",
+        "prompt": "What is an LRU Cache?",
+        "answer": "A Least Recently Used Cache, is a cache system usually implemented with a dictionary that uses that key as the input of the function and the value as the result of the function with the corresponding input. This is used to help memoize functions to repeat computing the result on function executions with the same input"
     }
 ]
 
