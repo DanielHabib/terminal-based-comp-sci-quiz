@@ -49,7 +49,7 @@ prompts = [
         "test": {
             "input": [[1,5,2,6,3]],
             "output": [1,2,3,5,6],
-        },   
+        },
     },
     {
         "id": 6,
@@ -107,6 +107,20 @@ prompts = [
         "title": "Stablity when Sorting",
         "prompt": "What is the difference between a stable and an unstable sort",
         "answer": "A stabe sort maintains the relative order between equal values, while an unstable sort makes no guarentees about the relative position of equal order elements"
-    }
+    },
+    {
+        "id" : 14,
+        "type": TYPE_IMPLEMENTATION,
+        "prompt": "",
+        "title": "Checking for Parity with Bitwise Operators",
+        "answer": "",
+        "funcName": "checkParity",
+        "description": "Determine whether `num` is even using only bitwise operators.",
+        "arguments": ["num"],
+        "test": {
+            "input": [37],
+            "output": False,
+        },
+    },
 ]
 
