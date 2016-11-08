@@ -122,5 +122,12 @@ prompts = [
             "output": False,
         },
     },
+    {
+        "id":15,
+        "type": TYPE_QUESTION,
+        "title": "Depth First Search Tree Intuition on Graphs",
+        "prompt": "What is a depth first search tree represenation of an undirected graph? Why is this tree representation useful?",
+        "answer": "Running DFS on a graph creates a Tree Representation. While processing the graph, we break edges up into Tree Nodes and Edge Nodes. This can be used to detect cycles and finding articulation vertexes"
+    },
 ]
 
