@@ -104,7 +104,7 @@ if __name__ == '__main__':
     
     print(Ink.ok("Evaluating Scripts and building Report"))
     numberOfCorrectImplementations = sum(map(testImplementation, implementationPrompts))
-    numberOfCorrectQuestions = sum(map(lambda prompt: prompt.grade, questionPrompts))
+    numberOfCorrectQuestions = sum([prompt.grade for prompt in questionPrompts])
 
     grade = ((numberOfCorrectImplementations + numberOfCorrectQuestions) / numberOfPrompts)*100
     
