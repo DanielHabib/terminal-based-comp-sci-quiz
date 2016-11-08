@@ -99,6 +99,14 @@ prompts = [
         "title": "LRU Cache Intuition",
         "prompt": "What is an LRU Cache?",
         "answer": "A Least Recently Used Cache, is a cache system usually implemented with a dictionary that uses that key as the input of the function and the value as the result of the function with the corresponding input. This is used to help memoize functions to repeat computing the result on function executions with the same input"
+    },
+
+    {
+        "id":13,
+        "type": TYPE_QUESTION,
+        "title": "Stablity when Sorting",
+        "prompt": "What is the difference between a stable and an unstable sort",
+        "answer": "A stabe sort maintains the relative order between equal values, while an unstable sort makes no guarentees about the relative position of equal order elements"
     }
 ]
 
