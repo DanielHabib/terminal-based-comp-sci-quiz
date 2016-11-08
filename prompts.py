@@ -129,5 +129,12 @@ prompts = [
         "prompt": "What is a depth first search tree represenation of an undirected graph? Why is this tree representation useful?",
         "answer": "Running DFS on a graph creates a Tree Representation. While processing the graph, we break edges up into Tree Nodes and Edge Nodes. This can be used to detect cycles and finding articulation vertexes"
     },
+    {
+        "id":16,
+        "type": TYPE_QUESTION,
+        "title": "Traveling Salesman Problem Intuition",
+        "prompt": "What is the Traveling Salesman Problem? How is it classified with regards to its computational complexity",
+        "answer": "The traveling salesman problem is a problem in graph theory requiring the most efficient (i.e., least total distance) Hamiltonian cycle a salesman can take through each of n cities. No general method of solution is known, and the problem is NP-hard."
+    },
 ]
 
