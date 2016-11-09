@@ -136,5 +136,12 @@ prompts = [
         "prompt": "What is the Traveling Salesman Problem? How is it classified with regards to its computational complexity",
         "answer": "The traveling salesman problem is a problem in graph theory requiring the most efficient (i.e., least total distance) Hamiltonian cycle a salesman can take through each of n cities. No general method of solution is known, and the problem is NP-hard."
     },
+    {
+        "id":17,
+        "type": TYPE_QUESTION,
+        "title": "AVL Trees",
+        "prompt": "What is an AVL Tree?",
+        "answer": "An AVL is a binary tree if for every node X, the difference in the height of X's left and right subtrees is at most 1. AVL trees are used in order to maintain a balanced Binary Tree."
+    },
 ]
 
