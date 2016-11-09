@@ -139,7 +139,7 @@ prompts = [
     {
         "id":17,
         "type": TYPE_QUESTION,
-        "title": "AVL Trees",
+        "title": "AVL Trees Intuition",
         "prompt": "What is an AVL Tree?",
         "answer": "An AVL is a binary tree if for every node X, the difference in the height of X's left and right subtrees is at most 1. AVL trees are used in order to maintain a balanced Binary Tree."
     },
