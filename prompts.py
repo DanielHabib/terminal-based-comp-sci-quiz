@@ -143,5 +143,12 @@ prompts = [
         "prompt": "What is an AVL Tree?",
         "answer": "An AVL is a binary tree if for every node X, the difference in the height of X's left and right subtrees is at most 1. AVL trees are used in order to maintain a balanced Binary Tree."
     },
+    {
+        "id":18,
+        "type": TYPE_QUESTION,
+        "title": "Integer Division Intuition",
+        "prompt": "What is the difference between integer division and regular division",
+        "answer": "integer division is equal to using regular division and then flooring to the nearest integer"
+    },
 ]
 
