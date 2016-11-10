@@ -150,5 +150,12 @@ prompts = [
         "prompt": "What is the difference between integer division and regular division",
         "answer": "integer division is equal to using regular division and then flooring to the nearest integer"
     },
+    {
+        "id": 19,
+        "type": TYPE_QUESTION,
+        "title": "Anonymous Function Intuition",
+        "prompt": "What is an anonymous function?",
+        "answer": "An anonymous function is a function that is not stored in a program file, but is associated with a variable whose data type is function_handle. Anonymous functions can accept inputs and return outputs, just as standard functions do. However, they can contain only a single executable statement. ",
+    },
 ]
 
