@@ -26,9 +26,8 @@ prompts = [
     {
         "id" : 4,
         "type": TYPE_IMPLEMENTATION,
-        "prompt": "",
+        "prompt": "Quicksort Implementation",
         "title": "Randomized Quicksort Implementation",
-        "answer": "",
         "funcName": "quicksort",
         "description": "Perform quicksort inplace leveraging a random pivot selection to increase the odds of achieving O(nlogn) time complexity.",
         "arguments": ["arr"],
@@ -40,9 +39,8 @@ prompts = [
     {
         "id" : 5,
         "type": TYPE_IMPLEMENTATION,
-        "prompt": "",
+        "prompt": "Mergesort Implementation",
         "title": "Mergesort Implementation",
-        "answer": "",
         "funcName": "mergesort",
         "description": "Perform mergesort capable of achieving O(nlogn) time complexity.",
         "arguments": ["arr"],
@@ -111,9 +109,8 @@ prompts = [
     {
         "id" : 14,
         "type": TYPE_IMPLEMENTATION,
-        "prompt": "",
+        "prompt": "Parity Intuition",
         "title": "Checking for Parity with Bitwise Operators",
-        "answer": "",
         "funcName": "checkParity",
         "description": "Determine whether `num` is even using only bitwise operators.",
         "arguments": ["num"],
