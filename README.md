@@ -4,7 +4,7 @@
 ## What is this?
 A light weight computer science quiz hosted in the terminal
 
-[Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
+![Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
 
 ## Getting Started
 Clone the repo:
@@ -25,7 +25,7 @@ When you complete all prompts results of your quiz are written into `results.txt
 ## Contributing
 Questions/Coding Challenges are easily added to the `prompts.py` file!
 
-if you are interested in contributing please see ![CONTRUBUTING.md](CONTRIBUTING.md)
+if you are interested in contributing please see [CONTRUBUTING.md](CONTRIBUTING.md)
 
 ## Requirements
 python 3.X
