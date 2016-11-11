@@ -180,5 +180,11 @@ prompts = [
             "output": 3,
         },
     },
+    {
+        "id": 22,
+        "type": TYPE_QUESTION,
+        "title": "Bit Vector Intuition",
+        "prompt": "What is a bit vector?",
+        "answer": "A bit array (also known as bitmap, bitset, bit string, or bit vector) is an array data structure that compactly stores bits",
+    },
 ]
-
