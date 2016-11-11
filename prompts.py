@@ -167,5 +167,18 @@ prompts = [
         Because Unicode characters don't generally fit into one 8-bit byte, there are numerous ways of storing Unicode characters in byte sequences, such as UTF-32 and UTF-8.
         """,
     },
+    {
+        "id" : 21,
+        "type": TYPE_IMPLEMENTATION,
+        "prompt": "Binary Search Implementation",
+        "title": "Basic Binary Search Implementation",
+        "funcName": "binarySearch",
+        "description": "find the index of the value `x` in the given array `arr`",
+        "arguments": ["arr", "x"],
+        "test": {
+            "input": [[1,2,3,4,5,6,7], 4],
+            "output": 3,
+        },
+    },
 ]
 
