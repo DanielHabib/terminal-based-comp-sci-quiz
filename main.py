@@ -38,7 +38,8 @@ def populateTemplate(prompt):
     replacementDict = {
             "func_name": prompt.funcName,
             "func_args": ", ".join(prompt.arguments),
-            "func_description": prompt.description
+            "func_description": prompt.description,
+            "func_title": prompt.title
             }
     template = reduce(lambda template, y : template.replace(y, replacementDict[y]),  replacementDict.keys(), template)
 
@@ -64,9 +65,10 @@ if __name__ == '__main__':
     random.shuffle(prompts)
     numberOfPrompts = intInput("How many questions would you like to solve today? (max: {0})".format(len(prompts)), clearScreen=True)
     
-    prompts = map(lambda x: Entry(**x), prompts[:numberOfPrompts])
+    prompts = [Entry(**x) for x in prompts[:numberOfPrompts]]
 
     for prompt in prompts: handlePrompt(prompt, promptList)
+
     os.system('clear')   
     print(Ink.good("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)\n\n"))
 
@@ -81,7 +83,6 @@ if __name__ == '__main__':
             if grade == 'y' or grade == 'n':
                 prompt.grade = int(grade == 'y')
                 break
-
 
     importlib.invalidate_caches()
     """Build Report"""
