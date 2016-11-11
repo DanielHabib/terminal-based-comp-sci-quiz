@@ -187,4 +187,11 @@ prompts = [
         "prompt": "What is a bit vector?",
         "answer": "A bit array (also known as bitmap, bitset, bit string, or bit vector) is an array data structure that compactly stores bits",
     },
+    {
+        "id": 23,
+        "type": TYPE_QUESTION,
+        "title": "Asymptotic Order Intuition",
+        "prompt": "Place the Following values in increasing asymptotic order: O(2^n), O(n), O(n!), O(1), O(n^2), O(logn), O(n^3)?",
+        "answer": "O(1), O(logn), O(n), O(nlogn), O(n^2), O(n^3), O(2^n), O(n!)",
+    },
 ]
