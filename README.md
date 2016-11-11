@@ -3,7 +3,7 @@
 
 Answer a mix of open-ended questions and coding challenges!
 
-![Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
+[Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
 
 ## Getting Started
 Clone the repo:
