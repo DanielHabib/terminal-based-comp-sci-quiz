@@ -154,5 +154,18 @@ prompts = [
         "prompt": "What is an anonymous function?",
         "answer": "An anonymous function is a function that is not stored in a program file, but is associated with a variable whose data type is function_handle. Anonymous functions can accept inputs and return outputs, just as standard functions do. However, they can contain only a single executable statement. ",
     },
+    {
+        "id": 20,
+        "type": TYPE_QUESTION,
+        "title": "Unicode/ASCII intuition",
+        "prompt": "What is the difference between Unicode And ASCII?",
+        "answer": """
+        ASCII defines 128 characters(Not Numbers), which map to the numbers 0–127. Unicode defines (less than) 221 characters, which, similarly, map to numbers 0–221 (though not all numbers are currently assigned, and some are reserved).
+
+        Unicode is a superset of ASCII, and the numbers 0–128 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
+
+        Because Unicode characters don't generally fit into one 8-bit byte, there are numerous ways of storing Unicode characters in byte sequences, such as UTF-32 and UTF-8.
+        """,
+    },
 ]
 
