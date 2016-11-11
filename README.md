@@ -1,7 +1,8 @@
 # Terminal Based Computer Science Self-Assesment
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Answer a mix of open-ended questions and coding challenges!
+## What is this?
+A light weight computer science quiz hosted in the terminal
 
 [Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
 
@@ -17,9 +18,12 @@ To start a quiz:
 make quiz
 ```
 
-Results of your quiz are written into `results.txt` with your grade and a timestamp!
+Answer a mix of open-ended questions and coding challenges!
 
-Questions are easily added to the `prompts.py` file!
+When you complete all prompts results of your quiz are written into `results.txt` with your grade and a timestamp!
+
+## Contributing
+Questions/Coding Challenges are easily added to the `prompts.py` file!
 
 if you are interested in contributing please see ![CONTRUBUTING.md](CONTRIBUTING.md)
 
