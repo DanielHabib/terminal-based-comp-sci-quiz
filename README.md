@@ -1,15 +1,15 @@
-# Educate Yo Self
+# Terminal Based Computer Science Self-Assesment
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Terminal Based Computer Science Self-assesment
+Answer a mix of open-ended questions and coding challenges!
 
 ![Quiz](https://media.giphy.com/media/l0MYvKnkPhgpjwg0M/source.gif)
 
 ## Getting Started
 Clone the repo:
 ```
-git clone http://www.github.com/danielhabib/educate-yo-self
-cd educate-yo-self
+git clone http://www.github.com/danielhabib/terminal-based-comp-sci-quiz
+cd terminal-based-comp-sci-quiz
 ```
 
 To start a quiz:
@@ -17,7 +17,12 @@ To start a quiz:
 make quiz
 ```
 
-Results are written into `results.txt` with your grade and a timestamp!
+Results of your quiz are written into `results.txt` with your grade and a timestamp!
+
+Questions are easily added to the `prompts.py` file!
+
+if you are interested in contributing please see ![CONTRUBUTING.md](CONTRIBUTING.md)
 
 ## Requirements
 python 3.X
+
