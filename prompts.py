@@ -194,4 +194,11 @@ prompts = [
         "prompt": "Place the Following values in increasing asymptotic order: O(2^n), O(n), O(n!), O(1), O(n^2), O(logn), O(n^3)?",
         "answer": "O(1), O(logn), O(n), O(nlogn), O(n^2), O(n^3), O(2^n), O(n!)",
     },
+    {
+        "id": 24,
+        "type": TYPE_QUESTION,
+        "title": "Heuristic Intuition",
+        "prompt": "What is a heuristic? Give an example of why someone would use one",
+        "answer": "The term heuristic is used for algorithms which find solutions among all possible ones ,but they do not guarantee that the best will be found,therefore they may be considered as approximately and not accurate algorithms.These algorithms,usually find a solution close to the best one and they find it fast and easily.Sometimes these algorithms can be accurate,that is they actually find the best solution, but the algorithm is still called heuristic until this best solution is proven to be the best.The method used from a heuristic algorithm is one of the known methods,such as greediness,but in order to be easy and fast the algorithm ignores or even suppresses some of the problem's demands.",
+    },
 ]
