@@ -201,4 +201,13 @@ prompts = [
         "prompt": "What is a heuristic? Give an example of why someone would use one",
         "answer": "The term heuristic is used for algorithms which find solutions among all possible ones ,but they do not guarantee that the best will be found,therefore they may be considered as approximately and not accurate algorithms.These algorithms,usually find a solution close to the best one and they find it fast and easily.Sometimes these algorithms can be accurate,that is they actually find the best solution, but the algorithm is still called heuristic until this best solution is proven to be the best.The method used from a heuristic algorithm is one of the known methods,such as greediness,but in order to be easy and fast the algorithm ignores or even suppresses some of the problem's demands.",
     },
+    {
+        "id": 24,
+        "type": TYPE_QUESTION,
+        "title": "Combinatorics Intuition",
+        "prompt": "Explain the study of Combinatorics. How does it apply to programming?",
+        "answer": """
+       Combinatorics is a branch of mathematics concerning the study of finite or countable discrete structures. Aspects of combinatorics include counting the structures of a given kind and size (enumerative combinatorics), deciding when certain criteria can be met, and constructing and analyzing objects meeting the criteria (as in combinatorial designs and matroid theory), finding `largest`, `smallest`, or `optimal` objects (extremal combinatorics and combinatorial optimization), and studying combinatorial structures arising in an algebraic context, or applying algebraic techniques to combinatorial problems (algebraic combinatorics).
+        """,
+    },
 ]
