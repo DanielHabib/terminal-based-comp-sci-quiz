@@ -54,7 +54,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Different Byte Prefixes",
         "prompt": "What are the prefixes and approximate values in order for 2^10, 2^20, 2^30, 2^40 , 2^50 Bytes",
-        "answer": "kilo, mega, giga, tera, peta",
+        "answer": "1 thousand - kilo, 1 million - mega, 1 billion - giga, 1 trillion - tera, 1 quadrillion - peta",
     },
     {
         "id": 7,
