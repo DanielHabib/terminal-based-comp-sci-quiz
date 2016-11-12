@@ -18,12 +18,12 @@ To start a quiz:
 make quiz
 ```
 
-Answer a mix of open-ended questions and coding challenges!
+Answer a mix of open-ended questions and coding challenges
 
-When you complete all prompts results of your quiz are written into `results.txt` with your grade and a timestamp!
+When you complete all prompts results of your quiz are written into `results.txt` with your grade and a timestamp
 
 ## Contributing
-Questions/Coding Challenges are easily added to the `prompts.py` file!
+Questions/Coding Challenges are easily added to the `prompts.py` file
 
 if you are interested in contributing please see [CONTRUBUTING.md](CONTRIBUTING.md)
 
