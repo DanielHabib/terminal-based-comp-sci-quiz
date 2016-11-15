@@ -210,4 +210,14 @@ prompts = [
        Combinatorics is a branch of mathematics concerning the study of finite or countable discrete structures. Aspects of combinatorics include counting the structures of a given kind and size (enumerative combinatorics), deciding when certain criteria can be met, and constructing and analyzing objects meeting the criteria (as in combinatorial designs and matroid theory), finding `largest`, `smallest`, or `optimal` objects (extremal combinatorics and combinatorial optimization), and studying combinatorial structures arising in an algebraic context, or applying algebraic techniques to combinatorial problems (algebraic combinatorics).
         """,
     },
+
+    {
+        "id": 25,
+        "type": TYPE_QUESTION,
+        "title": "Hamiltonian Path Intuition",
+        "prompt": "What is a hamiltonian path",
+        "answer": """
+            A path in a graph (Directed or Undirected) that visits every vertex exactly once. In addition, it is known as a hamiltonian cycle if it is a cycle.
+        """,
+    },
 ]
