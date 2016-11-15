@@ -14,7 +14,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Quicksort Lowerbound Intuition",
         "prompt": "What is the largest lower bound asymptotic time complexity function of Quicksort?",
-        "answer": "O(NlogN). Explanation: Sorting of an array is finding a specific permutation of that array. We know there are n! permutations of any given sequence of values,and every permutation requires our algorithm to handle it differnetly,  so even if we had perfect splits, we still would have a tree of height log(n!) = O(Nlogn)"
+        "answer": "Ω(NlogN) In most academic implementations. Explanation: Sorting of an array is finding a specific permutation of that array. We know there are n! permutations of any given sequence of values,and every permutation requires our algorithm to handle it differnetly,  so even if we had perfect splits, we still would have a tree of height log(n!) = O(Nlogn)"
     },
     {
         "id":3,
@@ -160,7 +160,7 @@ prompts = [
         "title": "Unicode/ASCII intuition",
         "prompt": "What is the difference between Unicode And ASCII?",
         "answer": """
-        ASCII defines 128 characters(Not Numbers), which map to the numbers 0–127. Unicode defines (less than) 221 characters, which, similarly, map to numbers 0–221 (though not all numbers are currently assigned, and some are reserved).
+        ASCII defines 128 characters(Not Numbers), which map to the numbers 0–127. Unicode defines (less than) 2^21 characters, which, similarly, map to numbers 0–2^21 (though not all numbers are currently assigned, and some are reserved).
 
         Unicode is a superset of ASCII, and the numbers 0–128 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
 
