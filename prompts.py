@@ -220,4 +220,16 @@ prompts = [
             A path in a graph (Directed or Undirected) that visits every vertex exactly once. In addition, it is known as a hamiltonian cycle if it is a cycle.
         """,
     },
+
+
+
+    {
+        "id": 27,
+        "type": TYPE_QUESTION,
+        "title": "Compiler Intuition",
+        "prompt": "What is a compiler",
+        "answer": """
+        A compiler is a special program that processes statements written in a particular programming language and turns them into machine language or "code" that a computer's processor uses.
+        """,
+    },
 ]
