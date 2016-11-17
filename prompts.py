@@ -232,4 +232,14 @@ prompts = [
         A compiler is a special program that processes statements written in a particular programming language and turns them into machine language or "code" that a computer's processor uses.
         """,
     },
+    {
+        "id": 28,
+        "type": TYPE_QUESTION,
+        "title": "Interpreted Vs Compiled Intuition",
+        "prompt": "What is the difference between a compiled language and an interpretted language?",
+        "answer": """
+        In a compiled implementation, the original program is translated into native machine instructions, which are executed directly by the hardware.
+        In an interpreted implementation, the original program is translated into something else. Another program, called "the interpreter", then examines "something else" and performs whatever actions are called for. Depending on the language and its implementation, there are a variety of forms of "something else". From more popular to less popular, "something else" might be
+        """,
+    },
 ]
