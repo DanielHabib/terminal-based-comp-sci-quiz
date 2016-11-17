@@ -210,7 +210,6 @@ prompts = [
        Combinatorics is a branch of mathematics concerning the study of finite or countable discrete structures. Aspects of combinatorics include counting the structures of a given kind and size (enumerative combinatorics), deciding when certain criteria can be met, and constructing and analyzing objects meeting the criteria (as in combinatorial designs and matroid theory), finding `largest`, `smallest`, or `optimal` objects (extremal combinatorics and combinatorial optimization), and studying combinatorial structures arising in an algebraic context, or applying algebraic techniques to combinatorial problems (algebraic combinatorics).
         """,
     },
-
     {
         "id": 25,
         "type": TYPE_QUESTION,
@@ -220,9 +219,15 @@ prompts = [
             A path in a graph (Directed or Undirected) that visits every vertex exactly once. In addition, it is known as a hamiltonian cycle if it is a cycle.
         """,
     },
-
-
-
+    {
+        "id": 26,
+        "type": TYPE_QUESTION,
+        "title": "Permutation Intuition",
+        "prompt": "What is a permutation? How many different Permutations are there of a set of n unique elements? ",
+        "answer": """
+            A Permutation is a way, especially one of several possible variations, in which a set or number of things can be ordered or arranged. There are N! permutations of N unique elements
+        """,
+    },
     {
         "id": 27,
         "type": TYPE_QUESTION,
@@ -239,7 +244,6 @@ prompts = [
         "prompt": "What is the difference between a compiled language and an interpretted language?",
         "answer": """
         In a compiled implementation, the original program is translated into native machine instructions, which are executed directly by the hardware.
-        In an interpreted implementation, the original program is translated into something else. Another program, called "the interpreter", then examines "something else" and performs whatever actions are called for. Depending on the language and its implementation, there are a variety of forms of "something else". From more popular to less popular, "something else" might be
-        """,
+        In an interpreted implementation, the original program is translated into something else. Another program, called "the interpreter", then examines "something else" and performs whatever actions are called for. Depending on the language and its implementation, there are a variety of forms of "something else". From more popular to less popular, "something else" might be"""
     },
 ]
