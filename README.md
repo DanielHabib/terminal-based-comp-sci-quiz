@@ -29,4 +29,6 @@ if you are interested in contributing please see [CONTRUBUTING.md](CONTRIBUTING.
 
 ## Requirements
 python 3.X
+vim
+Unix-based machine
 
