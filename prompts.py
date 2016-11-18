@@ -246,4 +246,17 @@ prompts = [
         In a compiled implementation, the original program is translated into native machine instructions, which are executed directly by the hardware.
         In an interpreted implementation, the original program is translated into something else. Another program, called "the interpreter", then examines "something else" and performs whatever actions are called for. Depending on the language and its implementation, there are a variety of forms of "something else". From more popular to less popular, "something else" might be"""
     },
+    {
+        "id" : 29,
+        "type": TYPE_IMPLEMENTATION,
+        "prompt": "Longest Common Subsequence Implementation",
+        "title": "Longest Common Subsequence Implementation",
+        "funcName": "lcss",
+        "description": "Return the Longest Common Subsequence between two arrays",
+        "arguments": ["a", "b"],
+        "test": {
+            "input": [[1,2,3,4,5,6,7], [4, 6, 7, 8, 23, 5],
+            "output": [4,6,7],
+        },
+    },
 ]
