@@ -76,7 +76,7 @@ if __name__ == '__main__':
     implementationPrompts = [prompt for prompt in promptList if prompt.type == TYPE_IMPLEMENTATION]
 
     for prompt in questionPrompts:
-        print(Ink.bold("My Answer: {0}\n".format(prompt.userAnswer)), Ink.good("Expected Answer:{0}".format(prompt.answer)))
+        print(Ink.header("\n______________\nQuestion: {0}\n".format(prompt.prompt)), Ink.bold("My Answer: {0}\n".format(prompt.userAnswer)), Ink.good("Expected Answer:{0}".format(prompt.answer)))
         graded = False
         while True:
             grade = strInput("Did you get it right?(y/n)")
