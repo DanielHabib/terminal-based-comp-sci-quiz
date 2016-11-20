@@ -277,4 +277,13 @@ prompts = [
             The number of Partial Solutions * How Long it Takes to evaluate each Partial Solution
         """,
     },
+    {
+        "id": 32,
+        "type": TYPE_QUESTION,
+        "title": "Backtracking Intuition",
+        "prompt": "What is Backtracking?",
+        "answer": """
+        A systematic way to iterate through all the possible configurations of a search space
+        """,
+    },
 ]
