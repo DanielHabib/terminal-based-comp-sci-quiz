@@ -255,7 +255,7 @@ prompts = [
         "description": "Return the Longest Common Subsequence between two arrays",
         "arguments": ["a", "b"],
         "test": {
-            "input": [[1,2,3,4,5,6,7], [4, 6, 7, 8, 23, 5],
+            "input": [[1,2,3,4,5,6,7], [4, 6, 7, 8, 23, 5]],
             "output": [4,6,7],
         },
     },
