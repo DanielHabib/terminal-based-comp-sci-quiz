@@ -259,4 +259,13 @@ prompts = [
             "output": [4,6,7],
         },
     },
+    {
+        "id": 30,
+        "type": TYPE_QUESTION,
+        "title": "Optimality Principle Intuition",
+        "prompt": "What is the principle of optimality?",
+        "answer": """
+           In reference to Dynammic Programming, This means that partial Solutions can be optimally extended with regard to the state after the partial solution, instead of the specifics around the partial solution.
+        """,
+    },
 ]
