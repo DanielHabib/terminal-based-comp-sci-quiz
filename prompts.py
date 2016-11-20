@@ -268,4 +268,13 @@ prompts = [
            In reference to Dynammic Programming, This means that partial Solutions can be optimally extended with regard to the state after the partial solution, instead of the specifics around the partial solution.
         """,
     },
+    {
+        "id": 31,
+        "type": TYPE_QUESTION,
+        "title": "Dynammic Programming Efficiency Intuition",
+        "prompt": "How can we determine the runtime of any dynammic programming algorithm?",
+        "answer": """
+            The number of Partial Solutions * How Long it Takes to evaluate each Partial Solution
+        """,
+    },
 ]
