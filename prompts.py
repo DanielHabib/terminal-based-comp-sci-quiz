@@ -145,7 +145,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Integer Division Intuition",
         "prompt": "What is the difference between integer division and regular division",
-        "answer": "integer division is equal to using regular division and then flooring to the nearest integer"
+        "answer": "Integer division is division in which the fractional part (remainder) is discarded "
     },
     {
         "id": 19,
