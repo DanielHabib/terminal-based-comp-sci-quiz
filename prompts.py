@@ -298,10 +298,10 @@ prompts = [
     {
         "id": 34,
         "type": TYPE_QUESTION,
-        "title": "LSB Intuition",
-        "prompt": "What is the Least Significant Bit?",
+        "title": "Mutex Vs Semaphore Intuition",
+        "prompt": "Name an instance when you would use a mutex, and a situation when you would use a binary semaphore",
         "answer": """
-            The Least Significant bit is the bit in a binary integer that determines the parity.  
+         Mutex is for exclusive access to a resource. A Binary semaphore should be used for Synchronization
         """,
     },
     {
