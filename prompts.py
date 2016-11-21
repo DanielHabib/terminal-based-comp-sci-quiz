@@ -286,4 +286,14 @@ prompts = [
         A systematic way to iterate through all the possible configurations of a search space
         """,
     },
+    {
+        "id": 33,
+        "type": TYPE_QUESTION,
+        "title": "LSB Intuition",
+        "prompt": "What is the Least Significant Bit?",
+        "answer": """
+            The Least Significant bit is the bit in a binary integer that determines the parity.
+            
+        """,
+    },
 ]
