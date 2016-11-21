@@ -292,8 +292,25 @@ prompts = [
         "title": "LSB Intuition",
         "prompt": "What is the Least Significant Bit?",
         "answer": """
-            The Least Significant bit is the bit in a binary integer that determines the parity.
-            
+            The Least Significant bit is the bit in a binary integer that determines the parity.  
+        """,
+    },
+    {
+        "id": 34,
+        "type": TYPE_QUESTION,
+        "title": "LSB Intuition",
+        "prompt": "What is the Least Significant Bit?",
+        "answer": """
+            The Least Significant bit is the bit in a binary integer that determines the parity.  
+        """,
+    },
+    {
+        "id": 35,
+        "type": TYPE_QUESTION,
+        "title": " Intuition",
+        "prompt": "What is Tail Call Optimization?",
+        "answer": """
+            TCO (Tail Call Optimization) is the process by which a compiler can make a call to a function and take no additional stack space. The only situation in which this happens is if the last instruction executed in a function f is a call to a function g. This can be used to make some recursive algorithms not require any additional space maintaining a callstack
         """,
     },
 ]
