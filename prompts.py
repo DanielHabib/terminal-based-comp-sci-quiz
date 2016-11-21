@@ -89,7 +89,7 @@ prompts = [
         "type": TYPE_QUESTION,
         "title": "Significant Bits",
         "prompt": "Where is the most significant bit in a bit vector located?",
-        "answer": "the leftmost bit is the most significant bit"
+        "answer": "The most significant bit or high order bit is the bit in a binary number with the greatest value"
     },
     {
         "id":12,
