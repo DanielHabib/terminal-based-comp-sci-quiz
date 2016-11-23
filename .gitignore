@@ -3,3 +3,5 @@ __pycache__
 solution_template*
 results.txt
 .DS_Store
+.dist
+comp_sci_quiz.egg-info
