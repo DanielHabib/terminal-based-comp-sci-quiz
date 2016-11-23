@@ -160,7 +160,7 @@ prompts = [
         "title": "Unicode/ASCII intuition",
         "prompt": "What is the difference between Unicode And ASCII?",
         "answer": """
-        ASCII defines 128 characters(Not Numbers), which map to the numbers 0–127. Unicode defines (less than) 2^21 characters, which, similarly, map to numbers 0–2^21 (though not all numbers are currently assigned, and some are reserved).
+        ASCII defines 128 characters(Letters, Numbers, Symbols), which map to the numbers 0–127. Unicode defines (less than) 2^21 characters, which, similarly, map to numbers 0–2^21 (though not all numbers are currently assigned, and some are reserved).
 
         Unicode is a superset of ASCII, and the numbers 0–128 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
 
