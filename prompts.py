@@ -307,10 +307,23 @@ prompts = [
     {
         "id": 35,
         "type": TYPE_QUESTION,
-        "title": " Intuition",
+        "title": "TCO Intuition",
         "prompt": "What is Tail Call Optimization?",
         "answer": """
             TCO (Tail Call Optimization) is the process by which a compiler can make a call to a function and take no additional stack space. The only situation in which this happens is if the last instruction executed in a function f is a call to a function g. This can be used to make some recursive algorithms not require any additional space maintaining a callstack
+        """,
+    },
+    {
+        "id": 36,
+        "type": TYPE_QUESTION,
+        "title": "Open Addressing Intuition",
+        "prompt": "What is Open Addressing? What method can we use to prevent Primary Clustering?",
+        "answer": """
+        Open Addressing is a method of collision resolution where we look for open slots in an array to place one of the key/value pairs that collided.
+        There are methods of probing we can use, linear probing does a linear search for nearby open slots, this works but can result in Primary Clustering. 
+        Primary Clustering is when multiple different hashindexes share large segments of probing segments. To remedy this we can leverage Random Probing.
+        Contrary to its name random probing leverages a Pseudo Random Sequence of array positions to tell us which slot to check next. For instance if the first slow in the random sequence array is two we would add two to the calculated hash index, if there is a collision there we would add the next value in the random Sequence to the initially calculated hash index
+
         """,
     },
 ]
