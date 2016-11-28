@@ -326,4 +326,13 @@ prompts = [
 
         """,
     },
+    {
+        "id": 37,
+        "type": TYPE_QUESTION,
+        "title": "Decision Problem Intuition",
+        "prompt": "What is a Decision Problem?",
+        "answer": """
+            The problem of finding a way to decide whether a formula or class of formulas is true or provable within a given system of axioms.
+        """,
+    },
 ]
