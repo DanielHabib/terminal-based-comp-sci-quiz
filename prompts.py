@@ -335,4 +335,15 @@ prompts = [
             The problem of finding a way to decide whether a formula or class of formulas is true or provable within a given system of axioms.
         """,
     },
+    {
+        "id": 38,
+        "type": TYPE_QUESTION,
+        "title": "Deterministic Intuition",
+        "prompt": "What is the difference between a deterministic and nondeterministic algorithm?",
+        "answer": """
+            NonDeterministic algorithms that even when given the same input values can exhibit different behaviors on different runs. 
+            An algorithm that solves a problem in nondeterministic polynomial time can run in polynomial time or exponential time depending on the choices it makes during execution 
+
+            """,
+    },
 ]
