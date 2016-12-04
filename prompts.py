@@ -346,4 +346,14 @@ prompts = [
 
             """,
     },
+    {
+        "id": 39,
+        "type": TYPE_QUESTION,
+        "title": "Standard Deviation Intuition",
+        "prompt": "What is the standard deviation?",
+        "answer": """
+                Quantity calculated to indicate the extent of deviation for a group as a whole.
+                For a finite set of numbers, the standard deviation is found by taking the square root of the average of the squared deviations of the values from their average value. 
+            """,
+    },
 ]
