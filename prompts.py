@@ -368,7 +368,7 @@ prompts = [
             Adjacency Matrixes are useful if you know you will have a fixed number of nodes, or you are able to allocate memory at the begininng of operations for all future vertexes
             Graph traversals on Adjacency Matrixes run in quadratic time,O(N^2), because every slot in the matrix needs to be visited
             """,
-    }
+    },
     {
         "id": 41,
         "type": TYPE_QUESTION,
@@ -380,6 +380,17 @@ prompts = [
             Adjacency Lists are powerful on spase graphs, only requiring O(V+E) additional space
 
             Adjacency Lists remove edges slowly O(E)
+            """,
+    },
+    {
+        "id": 42,
+        "type": TYPE_QUESTION,
+        "title": "Abstract Data Type Intuition",
+        "prompt": "What is an abstract data type? How does it compare to a datastructure?",
+        "answer": """
+                An Abstract datatype is defined by its behavior (semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations
+                A data structure is more concerned with the actual underlying implementation and consist of concrete representations of data
+
             """,
     }
 ]
