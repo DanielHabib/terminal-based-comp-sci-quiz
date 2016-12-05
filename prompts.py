@@ -356,4 +356,17 @@ prompts = [
                 For a finite set of numbers, the standard deviation is found by taking the square root of the average of the squared deviations of the values from their average value. 
             """,
     },
+    {
+        "id": 40,
+        "type": TYPE_QUESTION,
+        "title": "Graph Implementation Intuition",
+        "prompt": "When would you use an Adjacency Matrix as the underlying implementaton of A Graph? Why would you avoid using one?",
+        "answer": """
+            Adjacency Matrixes are useful when you frequently need to check edge existence, O(1), or update an existing edge, O(1).
+            Another reason to consider using an adjacency matrix would be if the {number of edges} is close to the {number of vertexes}^2
+            Adjacency Matrixes waste a lot of space on sparse arrays and are very slow when it comes to adding and removing vertexes.
+            Adjacency Matrixes are useful if you know you will have a fixed number of nodes, or you are able to allocate memory at the begininng of operations for all future vertexes
+            Graph traversals on Adjacency Matrixes run in quadratic time,O(N^2), because every slot in the matrix needs to be visited
+            """,
+    },
 ]
