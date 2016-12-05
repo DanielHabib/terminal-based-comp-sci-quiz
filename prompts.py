@@ -359,7 +359,7 @@ prompts = [
     {
         "id": 40,
         "type": TYPE_QUESTION,
-        "title": "Graph Implementation Intuition",
+        "title": "Adjacency Matrix Intuition",
         "prompt": "When would you use an Adjacency Matrix as the underlying implementaton of A Graph? Why would you avoid using one?",
         "answer": """
             Adjacency Matrixes are useful when you frequently need to check edge existence, O(1), or update an existing edge, O(1).
@@ -368,5 +368,18 @@ prompts = [
             Adjacency Matrixes are useful if you know you will have a fixed number of nodes, or you are able to allocate memory at the begininng of operations for all future vertexes
             Graph traversals on Adjacency Matrixes run in quadratic time,O(N^2), because every slot in the matrix needs to be visited
             """,
-    },
+    }
+    {
+        "id": 41,
+        "type": TYPE_QUESTION,
+        "title": "Adjacency List Intuition",
+        "prompt": "When would you use an Adjacency List as the underlying implementaton of A Graph? Why would you avoid using one?",
+        "answer": """
+            Adjacency Lists are powerful when we plan on adding/removing nodes from our Graph.
+            Adjacency lists allow for traversals in O(V+E)
+            Adjacency Lists are powerful on spase graphs, only requiring O(V+E) additional space
+
+            Adjacency Lists remove edges slowly O(E)
+            """,
+    }
 ]
