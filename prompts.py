@@ -390,7 +390,17 @@ prompts = [
         "answer": """
                 An Abstract datatype is defined by its behavior (semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations
                 A data structure is more concerned with the actual underlying implementation and consist of concrete representations of data
-
+            """,
+    },
+    {
+        "id": 43,
+        "type": TYPE_QUESTION,
+        "title": "Topological Sort Intuition",
+        "prompt": "What is a Topological Sort?",
+        "answer": """
+            A topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
             """,
     }
+
+
 ]
