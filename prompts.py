@@ -412,5 +412,16 @@ prompts = [
         "answer": """
             Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the application.
             """,
+    },
+    {
+        "id": 45,
+        "type": TYPE_QUESTION,
+        "title": "Design Pattern Intuition",
+        "topic": TOPIC_DESIGN_PATTERN,
+        "prompt": "What is a design pattern? Why are they useful?",
+        "answer": """
+        A design Pattern is a guideline for identifying and solving  common design problems.
+            They help solve common design problems based on the collected intelligence of the software engineering community, and they provide a concise vocabulary for discussing design problems and their solutions.
+            """,
     }
 ]
