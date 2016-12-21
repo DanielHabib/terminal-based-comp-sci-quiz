@@ -1,6 +1,8 @@
 TYPE_QUESTION = "question"
 TYPE_IMPLEMENTATION = "implementation"
 
+TOPIC_DESIGN_PATTERN = "design pattern"
+
 prompts = [
     {
         "id": 1,
@@ -400,7 +402,15 @@ prompts = [
         "answer": """
             A topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
             """,
+    },
+    {
+        "id": 44,
+        "type": TYPE_QUESTION,
+        "title": "Singleton Intuition",
+        "topic": TOPIC_DESIGN_PATTERN,
+        "prompt": "What is the singleton design pattern?",
+        "answer": """
+            Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the application.
+            """,
     }
-
-
 ]
