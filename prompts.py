@@ -423,5 +423,15 @@ prompts = [
         A design Pattern is a guideline for identifying and solving  common design problems.
             They help solve common design problems based on the collected intelligence of the software engineering community, and they provide a concise vocabulary for discussing design problems and their solutions.
             """,
+    },
+    {
+        "id": 46,
+        "type": TYPE_QUESTION,
+        "title": "Types of Design Patterns Intuition",
+        "topic": TOPIC_DESIGN_PATTERN,
+        "prompt": "What are the 3 different types of design patterns?",
+        "answer": """
+        Creational, Behavioral, Structural
+            """,
     }
 ]
