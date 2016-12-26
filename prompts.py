@@ -1,8 +1,8 @@
 TYPE_QUESTION = "question"
 TYPE_IMPLEMENTATION = "implementation"
 
-TOPIC_DESIGN_PATTERN = "design pattern"
-
+TOPIC_DESIGN_PATTERN = "design_pattern"
+TOPIC_PYTHON = "python"
 prompts = [
     {
         "id": 1,
@@ -433,5 +433,15 @@ prompts = [
         "answer": """
         Creational, Behavioral, Structural
             """,
-    }
+    },
+    {
+        "id": 47,
+        "type": TYPE_QUESTION,
+        "title": "Global Interpretter Lock Intuition",
+        "topic": TOPIC_PYTHON,
+        "prompt": "What is the global interpretter lock?",
+        "answer": """
+            Global interpreter lock (GIL) is a mechanism used in computer language interpreters to synchronize the execution of threads so that only one native thread can execute at a time. An interpreter that uses GIL always allows exactly one thread to execute at a time, even if run on a multi-core processor.
+            """,
+    },
 ]
