@@ -444,4 +444,22 @@ prompts = [
             Global interpreter lock (GIL) is a mechanism used in computer language interpreters to synchronize the execution of threads so that only one native thread can execute at a time. An interpreter that uses GIL always allows exactly one thread to execute at a time, even if run on a multi-core processor.
             """,
     },
+    {
+        "id": 48,
+        "type": TYPE_QUESTION,
+        "title": "Timsort Intuition",
+        "topic": TOPIC_PYTHON,
+        "prompt": "What is the default sorting algorithm used by the python language? Give an overview of its implementation. On what types of data does it excel",
+        "answer": """
+        Python uses timsort as its default sorting algorithm. 
+        Timsort is an adaptive, stable, natural sorting algorithm.
+        Timsort leverages a mix of insertion sort and mergesort to achieve O(NlogN) in the worst case, and O(N) in the best case.
+        Implementation overview:
+            First make a pass to identify all runs. a run is a run of values that contain increasing or strictly decreasing values. If there is no run of size min_run available, we create it using insertion sort.
+            Secondly, merge all sorted runs using Mergesort. Mergesort is implemented here with an intelligent merge pattern and galloping when possible.
+
+
+        Timsort Excels on partially ordered sets.
+            """,
+    },
 ]
