@@ -1,4 +1,4 @@
-from prompts import prompts, TYPE_QUESTION, TYPE_IMPLEMENTATION
+from prompts import prompts, Type, Topic
 from entry import Entry
 from functools import reduce
 from ink import Ink
@@ -49,9 +49,9 @@ def populateTemplate(prompt):
     return solutionTemplate
 
 def handlePrompt(prompt, promptList):
-    if prompt.type == TYPE_QUESTION:
+    if prompt.type == Type.QUESTION:
         prompt.userAnswer = strInput(prompt.prompt)
-    elif prompt.type == TYPE_IMPLEMENTATION:
+    elif prompt.type == Type.IMPLEMENTATION:
         solutionTemplate = populateTemplate(prompt)
         os.system("vim " + solutionTemplate)
 
@@ -72,8 +72,8 @@ if __name__ == '__main__':
     os.system('clear')   
     print(Ink.good("Congrats you finished all of the questions! Now it is time to grade your answers! (Note: Code snippets will be evaluated at the end)\n\n"))
 
-    questionPrompts = [prompt for prompt in promptList if prompt.type == TYPE_QUESTION] 
-    implementationPrompts = [prompt for prompt in promptList if prompt.type == TYPE_IMPLEMENTATION]
+    questionPrompts = [prompt for prompt in promptList if prompt.type == Type.QUESTION] 
+    implementationPrompts = [prompt for prompt in promptList if prompt.type == Type.IMPLEMENTATION]
 
     for prompt in questionPrompts:
         print(Ink.header("\n______________\nQuestion: {0}\n".format(prompt.prompt)), Ink.bold("My Answer: {0}\n".format(prompt.userAnswer)), Ink.good("Expected Answer:{0}".format(prompt.answer)))
