@@ -591,10 +591,10 @@ prompts = [
         "title": "Process Vs Thread Intuition",
         "topic": [Topic.OPERATING_SYSTEMS],
         "prompt": "What are the differences between a process and a thread?",
-        "answer": "
+        "answer": """
         Both processes and threads are independent sequences of execution. The typical difference is that threads (of the same process) run in a shared memory space, while processes run in separate memory spaces.
        Threads are spun up by processes. Processes are always given at least one thread, usually reffered to as the main thread
-        ",
+        """,
     },
     {
         "id": 55,
@@ -602,8 +602,8 @@ prompts = [
         "title": "Thread Intuition",
         "topic": [Topic.OPERATING_SYSTEMS],
         "prompt": "What is a thread?",
-        "answer": "
+        "answer": """
        A thread is an entity within a process that can be scheduled for execution. All threads of a process share its virtual address space and system resources. In addition, each thread maintains exception handlers, a scheduling priority, thread local storage, a unique thread identifier, and a set of structures the system will use to save the thread context until it is scheduled. 
-        ",
+        """,
     },
 ]
