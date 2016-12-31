@@ -21,6 +21,7 @@ class Topic(Enum):
     SEARCH = "search"
     COMBINATORICS = "combinatorics"
     IMPLEMENTATION = "implementation"
+    BIG_DATA = "big_data"
     DYNAMIC_PROGRAMMING = "dynamic_programming"
     RECURSION = "recursion"
     HASH_TABLES = "hash_tables"
@@ -604,6 +605,18 @@ prompts = [
         "prompt": "What is a thread?",
         "answer": """
        A thread is an entity within a process that can be scheduled for execution. All threads of a process share its virtual address space and system resources. In addition, each thread maintains exception handlers, a scheduling priority, thread local storage, a unique thread identifier, and a set of structures the system will use to save the thread context until it is scheduled. 
+        """,
+    },
+    {
+        "id": 55,
+        "type": Type.QUESTION,
+        "title": "Map-Reduce Intuition",
+        "topic": [Topic.OPERATING_SYSTEMS],
+        "prompt": "What is map-reduce? Where was it developed? When is it useful",
+        "answer": """
+    MapReduce is a programming model and an associated implementation for processing and generating large data sets. Users specify a map function that processes a key/value pair to generate a set of intermediate key/value pairs, and a reduce function that merges all intermediate values associated with the same intermediate key. MapRedue is an abstraction that handles all of the parellel processing without users needing to worry about it. 
+    Map-Reduce was generated at Google
+    Its useful when large amounts of data need to be processed on a distributed network of machines in parralell
         """,
     },
 ]
