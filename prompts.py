@@ -619,4 +619,15 @@ prompts = [
     Its useful when large amounts of data need to be processed on a distributed network of machines in parralell
         """,
     },
+    {
+        "id": 56,
+        "type": Type.QUESTION,
+        "title": " Intuition",
+        "topic": [Topic.DATA_STRUCTURES],
+        "prompt": "What is a Deque, how is it implemented?",
+        "answer": """
+        In computer science, a double-ended queue (dequeue, often abbreviated to deque, pronounced deck) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).
+        It is implemented with a doubly-linked list
+        """,
+    },
 ]
