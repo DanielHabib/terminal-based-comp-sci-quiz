@@ -660,4 +660,14 @@ prompts = [
             Approx. 450,000,000. This is around the point when algorithms making this many computations become virtually unsolvable
         """,
     },
+    {
+        "id": 60,
+        "type": Type.QUESTION,
+        "title": "Binomial Coefficient Intuition",
+        "topic": [Topic.MATH],
+        "prompt": "What is a binomial coefficient?",
+        "answer": """
+        The binomial coefficient is the number of ways of picking unordered outcomes from possibilities, also known as a combination or combinatorial number. The symbols and are used to denote a binomial coefficient, and are sometimes read as " n choose k."
+        """,
+    },
 ]
