@@ -622,12 +622,42 @@ prompts = [
     {
         "id": 56,
         "type": Type.QUESTION,
-        "title": " Intuition",
+        "title": "Deque Intuition",
         "topic": [Topic.DATA_STRUCTURES],
         "prompt": "What is a Deque, how is it implemented?",
         "answer": """
         In computer science, a double-ended queue (dequeue, often abbreviated to deque, pronounced deck) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).
         It is implemented with a doubly-linked list
+        """,
+    },
+    {
+        "id": 57,
+        "type": Type.QUESTION,
+        "title": "Stop Words Intuition",
+        "topic": [Topic.SEARCH],
+        "prompt": "What are stop words?",
+        "answer": """
+            Stop words are words which are filtered out before or after processing of natural language data (text).[1] Though stop words usually refer to the most common words in a language, there is no single universal list of stop words used by all natural language processing tools, and indeed not all tools even use such a list. Some tools specifically avoid removing these stop words to support phrase search.
+        """,
+    },
+    {
+        "id": 58,
+        "type": Type.QUESTION,
+        "title": "Inverted Index Intuition",
+        "topic": [Topic.SEARCH],
+        "prompt": "What is an Inverted Index? ",
+        "answer": """
+            An index data structure storing a mapping from content, such as words or numbers, to its locations in a database file, or in a document or a set of documents 
+        """,
+    },
+    {
+        "id": 59,
+        "type": Type.QUESTION,
+        "title": "Factorial Math",
+        "topic": [Topic.MATH],
+        "prompt": "What is the approxomate value of 12!?",
+        "answer": """
+            Approx. 450,000,000. This is around the point when algorithms making this many computations become virtually unsolvable
         """,
     },
 ]
