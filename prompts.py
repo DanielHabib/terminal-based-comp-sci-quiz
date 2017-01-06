@@ -667,7 +667,19 @@ prompts = [
         "topic": [Topic.MATH],
         "prompt": "What is a binomial coefficient?",
         "answer": """
+            Approx. 450,000,000. This is around the point when algorithms making this many computations become virtually unsolvable
         The binomial coefficient is the number of ways of picking unordered outcomes from possibilities, also known as a combination or combinatorial number. The symbols and are used to denote a binomial coefficient, and are sometimes read as " n choose k."
+        """,
+    },
+    {
+        "id": 61,
+        "type": Type.QUESTION,
+        "title": "Power Set Intuition",
+        "topic": [Topic.MATH],
+        "prompt": "What is a power set?",
+        "answer": """
+             Power Set is a set of all the subsets of a set.
+             Eq: Number of elements in a power set = 2^n.
         """,
     },
 ]
