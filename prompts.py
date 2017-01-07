@@ -682,4 +682,14 @@ prompts = [
              Eq: Number of elements in a power set = 2^n.
         """,
     },
+    {
+        "id": 62,
+        "type": Type.QUESTION,
+        "title": "Cartesian Product Intuition",
+        "topic": [Topic.MATH, Topic.COMBINATORICS],
+        "prompt": "What is a Cartesian Product?",
+        "answer": """
+            In mathematics, a Cartesian product (or product set) is the direct product of two sets.
+        """,
+    },
 ]
