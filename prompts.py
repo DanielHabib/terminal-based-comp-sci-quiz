@@ -692,4 +692,13 @@ prompts = [
             In mathematics, a Cartesian product (or product set) is the direct product of two sets.
         """,
     },
+    {
+        "id": 63,
+        "type": Type.QUESTION,
+        "title": "Closure Intuition Intuition",
+        "topic": [Topic.PYTHON],
+        "prompt": "What is a closure?",
+        "answer": """
+            Closure is just a fancy name for a function that remembers the values from the enclosing lexical scope even when the program flow is no longer in the enclosing scope.
+        """,
 ]
