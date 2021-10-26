@@ -240,7 +240,7 @@ prompts = [
         "type": Type.QUESTION,
         "topics": [Topic.ALGO_ANALYSIS],
         "title": "Asymptotic Order Intuition",
-        "prompt": "Place the Following values in increasing asymptotic order: O(2^n), O(n), O(n!), O(1), O(n^2), O(logn), O(n^3)?",
+        "prompt": "Place the Following values in increasing asymptotic order: O(2^n), O(n), O(n!), O(1), O(n^2), O(nlogn), O(logn), O(n^3)?",
         "answer": "O(1), O(logn), O(n), O(nlogn), O(n^2), O(n^3), O(2^n), O(n!)",
     },
     {
