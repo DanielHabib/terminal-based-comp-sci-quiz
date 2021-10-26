@@ -34,3 +34,6 @@ vim
 
 Unix-based machine
 
+## Join the community
+
+Need advice on how to break into Big Tech? Join the [discord](https://discord.com/invite/M8944Xz26m)
