@@ -701,5 +701,15 @@ prompts = [
         "answer": """
             Closure is just a fancy name for a function that remembers the values from the enclosing lexical scope even when the program flow is no longer in the enclosing scope.
         """,
-        }
+        },
+    {
+        "id": 64,
+        "type": Type.QUESTION,
+        "title": "Belady’s Anomaly Intuition",
+        "topic": [Topic.OPERATING_SYSTEMS],
+        "prompt": "What is Belady’s Anomaly? Why do some algorithms do not suffer from this anomaly? 
+        "answer": """
+            It is a phenomenon in which increasing the number of frames in memory also increases the number of page faults. Algorithms that assign priority to a page for a replacement independent of the number of frames in the main memory do not suffer from this anomaly. For example LRU, Optimal page replacement algorithm.
+            """,
+    }
 ]
