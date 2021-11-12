@@ -143,7 +143,7 @@ prompts = [
         "topics": [Topic.SORTING],
         "title": "Stablity when Sorting",
         "prompt": "What is the difference between a stable and an unstable sort",
-        "answer": "A stabe sort maintains the relative order between equal values, while an unstable sort makes no guarentees about the relative position of equal order elements"
+        "answer": "A stable sort maintains the relative order between equal values, while an unstable sort makes no guarentees about the relative position of equal order elements"
     },
     {
         "id" : 14,
@@ -707,9 +707,22 @@ prompts = [
         "type": Type.QUESTION,
         "title": "Belady’s Anomaly Intuition",
         "topic": [Topic.OPERATING_SYSTEMS],
-        "prompt": "What is Belady’s Anomaly? Why do some algorithms do not suffer from this anomaly? 
+        "prompt": "What is Belady’s Anomaly? Why do some algorithms do not suffer from this anomaly? ",
         "answer": """
             It is a phenomenon in which increasing the number of frames in memory also increases the number of page faults. Algorithms that assign priority to a page for a replacement independent of the number of frames in the main memory do not suffer from this anomaly. For example LRU, Optimal page replacement algorithm.
             """,
-    }
+    },
+    {
+        "id": 65,
+        "type": Type.QUESTION,
+        "title": "Trie Explanation",
+        "topic": [Topic.DATA_STRUCTURES, Topic.TREES],
+        "prompt": "What is a trie? Outline its use cases and benefits.",
+        "answer": """
+            A trie is a type of tree which is most often used as a symbol table (dictionary). The path from root to a value-containing node expresses the key, and the value of that node is specified by the path taken to reach that node. 
+            A trie is the underlying structure supporting live typing suggestions (autocomplete), where a user's current phrase can be looked up in the trie to find possible completions. 
+            More generally, tries can be used for string prefix searching.
+        """,
+        },
+
 ]
