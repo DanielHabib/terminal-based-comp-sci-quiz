@@ -722,6 +722,7 @@ prompts = [
             A trie is a type of tree which is most often used as a symbol table (dictionary). The path from root to a value-containing node expresses the key, and the value of that node is specified by the path taken to reach that node. 
             A trie is the underlying structure supporting live typing suggestions (autocomplete), where a user's current phrase can be looked up in the trie to find possible completions. 
             More generally, tries can be used for string prefix searching.
+	    For a key of size n characters, it has worst case search and insertion runtimes of θ(n).
         """,
         },
 
